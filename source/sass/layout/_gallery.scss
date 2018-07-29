@@ -17,6 +17,10 @@
             background-position: 50% 50%;
             background-repeat: no-repeat;
 
+            @media only screen and (max-width: 720px) {
+                height: 100px;
+            }
+
             &:first-child {
                 margin-right: 20px;
             }

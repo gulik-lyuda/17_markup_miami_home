@@ -3,12 +3,24 @@
     &__left {
         width: 50%;
         float: left;
+
+        @media only screen and (max-width: 600px) {
+            width: auto;
+            float: none;
+
+            text-align: center;
+        }
     }
     // end of .consultation__left
 
     &__right {
         width: 40%;
         float: right;
+
+        @media only screen and (max-width: 600px) {
+            width: auto;
+            float: none;
+        }
     }
     // end of .consultation__right
 }

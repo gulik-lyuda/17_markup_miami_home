@@ -1,8 +1,23 @@
 .first_screen {
+    position: relative;
+    
     background-image: url('../images/backgrounds/first_screen_bg.jpg');
     background-size: cover;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+    
+
+    &:before {
+        @media only screen and (max-width: 720px) {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($black, .4);
+        }
+    }
 
     .container {
         max-width: 940px;
@@ -27,6 +42,17 @@
                 top: -46px;
                 left: 50%;
                 transform: translate(-50%, 0);
+
+                @media only screen and (max-width: 720px) {
+                    top: -25px;
+                }
+
+                img {
+                    @media only screen and (max-width: 720px) {
+                        width: 75px;
+                        height: auto;
+                    }
+                }
             }
             // end of .header__logo
 
@@ -67,6 +93,21 @@
                 justify-content: space-between;    
 
                 list-style-type: none;
+
+                @media only screen and (max-width: 720px) {
+                    position: static;
+                    display: block;
+                    padding-top: 200px;
+                    -webkit-padding-start: 0;
+                }
+
+                li {
+                    @media only screen and (max-width: 720px) {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-size: 22px;
+                    }
+                }
 
                 a {
                     text-transform: uppercase;
