@@ -1,0 +1,79 @@
+.gallery {
+
+    .apart {
+        margin-bottom: 30px;
+
+        &__photos {
+            display: flex;
+            margin-bottom: 12px;
+        }
+        // end of .apart__photos
+
+        &__photo {
+            height: 260px;
+            flex: 1;
+
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+        // end of .apart__photo
+    
+        .apart_1 {
+            background-image: url('../images/backgrounds/apart_1.png');
+        }
+        .apart_2 {
+            background-image: url('../images/backgrounds/apart_2.png');
+        }
+        .apart_3 {
+            background-image: url('../images/backgrounds/apart_3.png');
+        }
+        .apart_4 {
+            background-image: url('../images/backgrounds/apart_4.png');
+        }
+        .apart_5 {
+            background-image: url('../images/backgrounds/apart_5.png');
+        }
+        .apart_6 {
+            background-image: url('../images/backgrounds/apart_6.png');
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+
+            span {
+                font-weight: 300;
+                color: $blue;
+            }
+        }
+        
+        .mode_right {
+            .apart__photo {
+                &:first-child {
+                    flex: 2;
+                }
+            }
+        }
+    
+        .mode_left {
+            .apart__photo {
+                &:last-child {
+                    flex: 2;
+                }
+            }
+        }
+    }
+    // end of .apart
+    
+    .button_wrapper {
+        margin-top: 30px;
+        
+        text-align: center;
+    }
+}
+// end of .gallery

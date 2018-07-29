@@ -1,0 +1,27 @@
+.second_screen {
+    &__left {
+        width: 33%;
+        float: left;
+
+        font-size: 48px;
+        font-weight: 100;
+        text-transform: uppercase;
+
+        strong {
+            font-weight: 500;
+        }
+
+        span {
+            color: $blue;
+        }
+    }
+    // end of .second_screen__left
+
+    &__right {
+        width: 66%;
+        float: right;
+
+    }
+    // end of .second_screen__right
+}
+// end of .second_screen

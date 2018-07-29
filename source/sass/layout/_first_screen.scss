@@ -1,0 +1,83 @@
+.first_screen {
+    background-image: url('../images/backgrounds/first_screen_bg.jpg');
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+
+    .container {
+        max-width: 940px;
+        height: 100vh;
+        min-height: 500px;
+        margin: 0 auto;
+                
+        @media only screen and (max-width: 980px) {
+            margin: 0 20px;
+        }
+
+        position: relative;
+
+        .header {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+
+            &__logo {
+                position: absolute;
+                top: -46px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            // end of .header__logo
+
+            &__phone {
+                display: block;
+                float: left;
+
+                text-decoration: none;
+                color: $white;
+                opacity: .6;
+            }
+            // end of .header__phone
+
+            &__call {
+                display: block;
+                float: right;
+
+                border-bottom: 1px dashed $white;
+
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $white;
+                opacity: .6;
+            }
+            // end of .header__call
+        } 
+        // end of .header        
+
+        .main_menu {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;    
+
+                list-style-type: none;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $white;
+                }
+            }                   
+        }
+        // end of .main_menu
+    }
+    // end of .container
+}
+// end of .first_screen
